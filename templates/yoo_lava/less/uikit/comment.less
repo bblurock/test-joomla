@@ -1,0 +1,87 @@
+/* Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+//
+// Comment component
+//
+// ==========================================================================
+
+// Variables
+// ========================================================================
+
+@comment-header-margin-bottom:                      @global-margin;
+@comment-avatar-margin-right:                       @global-margin;
+@comment-title-font-size:                           round(@global-font-size * 1.14);
+@comment-title-line-height:                         round(@comment-title-font-size * 1.37);
+@comment-meta-color:                                @global-muted-color;
+@comment-meta-font-size:                            round(@global-font-size * 0.78);
+@comment-meta-line-height:                          round(@comment-meta-font-size * 1.45);
+@comment-list-margin-top:                           @global-large-margin;
+
+//
+// New
+//
+
+@comment-header-padding:                            10px;
+@comment-header-border:                             @global-border;
+@comment-header-background:                         @global-contrast-color;
+@comment-body-padding:                              @comment-header-padding;
+
+
+// Component
+// ==========================================================================
+
+
+// Sub-object `uk-comment-header`
+// ==========================================================================
+
+.hook-comment-header() {
+    padding: @comment-header-padding;
+    border: 1px solid @comment-header-border;
+    background: @comment-header-background;
+    border-radius: @global-small-border-radius;
+}
+
+
+// Sub-object `uk-comment-avatar`
+// ==========================================================================
+
+.hook-comment-avatar() {}
+
+
+// Sub-object `uk-comment-title`
+// ==========================================================================
+
+.hook-comment-title() {}
+
+
+// Sub-object `uk-comment-meta`
+// ==========================================================================
+
+.hook-comment-meta() {}
+
+
+/* Modifier `uk-comment-primary`
+ ========================================================================== */
+
+    .hook-comment-primary() {
+        .uk-comment-header { 
+            background: #f1f7f9;
+            border-color: #eaeef0;
+        }
+    }
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-comment-misc() {
+
+    // Sub-object `uk-comment-body`
+    // ==========================================================================
+
+    .uk-comment-body {
+        padding-left: @comment-body-padding;
+        padding-right: @comment-body-padding;
+    }
+
+}

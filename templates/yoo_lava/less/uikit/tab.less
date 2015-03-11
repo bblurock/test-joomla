@@ -1,0 +1,92 @@
+/* Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+//
+// Tab component
+//
+// ==========================================================================
+
+// Variables
+// ========================================================================
+
+@tab-border:								@global-border;
+@tab-color:									@global-link-color;
+@tab-hover-border:							rgba(0,0,0,0);
+@tab-hover-background:						fadeout(@global-dark-background, 98%);
+@tab-hover-color:							@global-link-hover-color;
+@tab-active-border:							@global-border;
+@tab-active-background:						@global-background;
+@tab-active-color:							@global-color;
+@tab-disabled-color:						@global-muted-color;
+
+//
+// New
+//
+
+@tab-dropdown-background:					@global-contrast-color;
+@tab-dropdown-margin-top:					10px;
+
+
+// Component
+// ==========================================================================
+
+//
+// Items
+//
+
+.hook-tab() {
+	border-top-left-radius: @global-small-border-radius;
+	border-top-right-radius: @global-small-border-radius;
+}
+
+// Hover
+.hook-tab-hover() {}
+
+// Active
+.hook-tab-active() {}
+
+// Disabled
+.hook-tab-disabled() {}
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-tab-misc() {
+
+	//
+	// Tab Dropdown
+	//
+
+	.uk-tab .uk-dropdown { 
+		margin-top: @tab-dropdown-margin-top;
+		background: @tab-dropdown-background;
+	}
+
+
+	// Modifier: `uk-tab-bottom'
+	// =====================================================================
+
+	.uk-tab-bottom > li > a { border-radius: 0 0 @global-small-border-radius @global-small-border-radius; }
+
+
+	// Modifier: `uk-tab-left', `uk-tab-right'
+	// =====================================================================
+
+	// Only tablets and desktops
+	@media (min-width: @breakpoint-small) {
+
+		//
+		// Modifier: `uk-tab-left'
+		//
+
+		.uk-tab-left > li > a { border-radius: @global-small-border-radius 0 0 @global-small-border-radius; }
+
+		//
+		// Modifier: `uk-tab-right'
+		//
+
+		.uk-tab-right > li > a { border-radius: 0 @global-small-border-radius @global-small-border-radius 0; }
+
+	}
+
+}

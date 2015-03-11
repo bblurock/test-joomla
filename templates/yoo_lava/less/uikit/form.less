@@ -1,0 +1,58 @@
+/* Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+//
+// Form component
+//
+// ==========================================================================
+
+// Variables
+// ========================================================================
+
+@form-height:                               @global-height;
+@form-small-height:                         @global-small-height;
+@form-large-height:                         @global-large-height;
+@form-small-font-size:                      round(@global-font-size * 0.85);
+@form-large-font-size:                      round(@global-font-size * 1.14);
+@form-border:                               #ededee;
+@form-background:                           #fff;
+@form-color:                                @global-color;
+@form-placeholder-color:                    @global-muted-color;
+@form-focus-border:                         darken(@form-border, 10%);
+@form-focus-color:                          @global-color;
+@form-disabled-border:                      @global-border;
+@form-disabled-background:                  fadeout(@global-contrast-color, 20%);
+@form-disabled-color:                       @global-muted-color;
+@form-blank-border:                        @global-border;
+@form-legend-border:                        @global-border;
+@form-legend-font-size:                     round(@global-font-size * 1.28);
+@form-legend-line-height:                   round(@form-legend-font-size * 1.66);
+@form-gutter:                               @global-margin;
+@form-icon-width:                           @global-height;
+@form-icon-font-size:                       @global-font-size;
+@form-icon-color:                           @global-muted-color;
+@form-large-padding-vertical:               15px;
+@form-large-padding-horizontal:             15px;
+@form-focus-box-shadow:                     @global-border;
+
+
+// Component
+// ==========================================================================
+
+.hook-form() {}
+
+.hook-form-focus() { box-shadow: 0 0 10px @form-focus-box-shadow; }
+
+.hook-form-focus() {}
+.hook-form-disabled() {}
+.hook-form-danger() {}
+.hook-form-success() {}
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-form-misc() {
+
+    .uk-form-large { padding: @form-large-padding-vertical @form-large-padding-horizontal !important; }
+
+}

@@ -1,0 +1,50 @@
+/* Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+//
+// Subnav component
+//
+// ==========================================================================
+
+// Variables
+// ========================================================================
+
+@subnav-margin:										15px;
+@subnav-color:										@global-link-color;
+@subnav-hover-color:								@global-link-hover-color;
+@subnav-disabled-color:								@global-muted-color;
+@subnav-line-border:								rgba(255,255,255,0);
+@subnav-pill-hover-background:						@global-default-background;
+@subnav-pill-hover-color:							@global-contrast-color;
+@subnav-pill-active-background:						@navbar-nav-active-background;
+@subnav-pill-active-color:							@global-contrast-color;
+
+//
+// New
+//
+
+@subnav-pill-border-radius: 						@global-large-border-radius;
+
+
+// Component
+// ==========================================================================
+
+
+// Modifier: `uk-subnav-line'
+// ==========================================================================
+
+.hook-subnav-line-divider() {}
+
+
+// Modifier: `uk-subnav-pill'
+// ==========================================================================
+
+.hook-subnav-pill() { border-radius: @subnav-pill-border-radius; }
+
+// Hover
+.hook-subnav-pill-hover() {
+	box-shadow: inset 0 -1px 0 @global-box-shadow;
+	text-shadow: 0 1px 0 @global-text-shadow;
+}
+
+// Active
+.hook-subnav-pill-active() {}

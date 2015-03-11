@@ -1,0 +1,48 @@
+/* Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+@baseBorderRadius:  	3px;
+@borderRadiusLarge:  	50px;
+@borderRadiusSmall:     2px;
+
+
+/* Button overrides
+ ========================================================================== */
+
+.btn-group.btn-group-vertical > .btn:first-child { border-radius: @baseBorderRadius @baseBorderRadius 0 0; }
+.btn-group.btn-group-vertical > .btn:last-child { border-radius: 0 0 @baseBorderRadius @baseBorderRadius; }
+
+.btn-group > .btn:first-child { border-radius: @borderRadiusLarge 0 0 @borderRadiusLarge; }
+.btn-group > .btn:last-child,
+.btn-group > .dropdown-toggle { border-radius: 0 @borderRadiusLarge @borderRadiusLarge 0; }
+
+
+/* Form overrides
+ ========================================================================== */
+
+.input-append input { border-radius: @borderRadiusLarge 0 0 @borderRadiusLarge; }
+
+.input-append .add-on:first-child, 
+.input-append .btn:first-child,
+.input-prepend .add-on:first-child, 
+.input-prepend .btn:first-child,
+.input-prepend.input-append .add-on:first-child, 
+.input-prepend.input-append .btn:first-child { border-radius: @borderRadiusLarge 0 0 @borderRadiusLarge; }
+
+.input-append .add-on:last-child, 
+.input-append .btn:last-child,
+.input-prepend .add-on:last-child, 
+.input-prepend .btn:last-child,
+.input-prepend.input-append .add-on:last-child, 
+.input-prepend.input-append .btn:last-child { border-radius: 0 @borderRadiusLarge @borderRadiusLarge 0; }
+
+input.search-query { border-radius: 0; }
+
+.form-search .input-append .search-query { border-radius: @borderRadiusLarge 0 0 @borderRadiusLarge; }
+.form-search .input-append .btn { border-radius: 0 @borderRadiusLarge @borderRadiusLarge 0; }
+.form-search .input-prepend .search-query { border-radius: 0 @borderRadiusLarge @borderRadiusLarge 0; }
+.form-search .input-prepend .btn { border-radius: @borderRadiusLarge 0 0 @borderRadiusLarge; }
+
+/* Navs overrides
+ ========================================================================== */
+
+.nav-tabs .dropdown-menu { border-radius: 0; }

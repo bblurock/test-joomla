@@ -1,0 +1,53 @@
+/* Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+//
+// Off-canvas component
+//
+// ==========================================================================
+
+// Variables
+// ========================================================================
+
+@offcanvas-z-index:									@global-z-index;
+@offcanvas-bar-background:							@global-dark-background;
+@offcanvas-panel-title-color:						@offcanvas-panel-link-color;
+@offcanvas-search-background:						@global-contrast-color;
+@offcanvas-search-color:							@global-color;
+@offcanvas-search-placeholder-color:				@offcanvas-panel-color;
+@offcanvas-search-icon-color:						@offcanvas-panel-color;
+
+
+// Component
+// ==========================================================================
+
+.hook-offcanvas() {}
+
+
+// Sub-object `uk-offcanvas-bar`
+// ==========================================================================
+
+.hook-offcanvas-bar() {}
+
+
+// Panel in offcanvas
+// ==========================================================================
+
+.hook-offcanvas-panel() {}
+
+
+// Search in offcanvas
+// ==========================================================================
+
+.hook-offcanvas-search-field() {
+	padding: 0 10px 0 15px !important;
+	border-radius: @global-large-border-radius;
+}
+
+// Miscellaneous
+// ========================================================================
+
+.hook-offcanvas-misc() {
+
+	.uk-offcanvas .uk-search:before { display: none; }
+
+}
